@@ -11,7 +11,6 @@ file_path = 'massdotFreevalVolumeProfile_w_default_v4.json'
 with open(file_path, 'r') as file:
     jsondata = json.load(file)
 
-st.write(list(jsondata.keys()))
 # Read the Excel file
 df = pd.read_excel("tcds_station_list.xlsx", sheet_name="tcds_list (2)", skiprows=11)
 
