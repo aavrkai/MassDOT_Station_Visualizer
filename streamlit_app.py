@@ -29,7 +29,7 @@ for i in range(len(df["Station"])):
 df["Status"] = data_list
 
 # Title of the Streamlit app
-st.title("Location Data Visualization")
+st.title("Station Data Visualization")
 
 # Create filter options for the Route column
 filter_options = ["All"] + sorted(df["Route"].unique().tolist())
